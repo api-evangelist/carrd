@@ -1,0 +1,307 @@
+generated: '2026-08-12'
+method: searched
+source: https://carrd.co/docs/forms
+note: >-
+  Carrd's integration surface runs in ONE direction only: Carrd is the API CLIENT. A Pro
+  Standard (or higher) Carrd site can push form submissions into a partner's API, and a Pro
+  Plus site can post to an arbitrary URL or trigger a Zapier/Make/n8n automation. Carrd
+  itself publishes no API, so no entry here can be modelled as a forkable two-source Arazzo
+  workflow — there is no Carrd-side operationId to bind. Every entry is therefore
+  LISTING-ONLY (arazzo: null). This is the surface that put Carrd in the harvest backlog
+  via the marketing-integration-graph, and it is real, but it is consumption, not supply.
+  Nothing here is fabricated: each partner below is named on a Carrd documentation page
+  that returned HTTP 200 on 2026-08-12.
+arazzo_status: not-authorable
+arazzo_status_reason: >-
+  Two-source Arazzo requires operations on both sides. Carrd has no public OpenAPI and no
+  public operations, so only a partner-only (one-sided) workflow could be written, which
+  would misrepresent it as a Carrd integration workflow.
+integrations:
+  # --- Signup forms: Carrd POSTs captured name/email into the partner's list/contact API
+  - slug: activecampaign
+    label: ActiveCampaign
+    partner: ActiveCampaign
+    category: email-marketing
+    use_case: Signup form adds a visitor as an ActiveCampaign contact
+    docs: https://carrd.co/docs/forms/setting-up-an-activecampaign-signup-form
+    direction: carrd-as-client
+    catalog_match: all/activecampaign
+    arazzo: null
+  - slug: beehiiv
+    label: beehiiv
+    partner: beehiiv
+    category: email-marketing
+    use_case: Signup form subscribes a visitor to a beehiiv publication
+    docs: https://carrd.co/docs/forms/setting-up-a-beehiiv-signup-form
+    direction: carrd-as-client
+    catalog_match: all/beehiiv
+    arazzo: null
+  - slug: brevo
+    label: Brevo
+    partner: Brevo
+    category: email-marketing
+    use_case: Signup form adds a visitor to a Brevo list
+    docs: https://carrd.co/docs/forms/setting-up-a-brevo-signup-form
+    direction: carrd-as-client
+    catalog_match: all/brevo
+    arazzo: null
+  - slug: buttondown
+    label: Buttondown
+    partner: Buttondown
+    category: email-marketing
+    use_case: Signup form adds a visitor to a Buttondown subscriber list
+    docs: https://carrd.co/docs/forms/setting-up-a-buttondown-signup-form
+    direction: carrd-as-client
+    catalog_match: all/buttondown
+    arazzo: null
+  - slug: emailoctopus
+    label: EmailOctopus
+    partner: EmailOctopus
+    category: email-marketing
+    use_case: Signup form adds a visitor to an EmailOctopus list
+    docs: https://carrd.co/docs/forms/setting-up-an-emailoctopus-signup-form
+    direction: carrd-as-client
+    catalog_match: all/emailoctopus
+    arazzo: null
+  - slug: getresponse
+    label: GetResponse
+    partner: GetResponse
+    category: email-marketing
+    use_case: Signup form adds a visitor to a GetResponse list
+    docs: https://carrd.co/docs/forms/setting-up-a-getresponse-signup-form
+    direction: carrd-as-client
+    catalog_match: all/getresponse
+    arazzo: null
+  - slug: ghost
+    label: Ghost
+    partner: Ghost
+    category: publishing
+    use_case: Signup form adds a visitor as a Ghost member
+    docs: https://carrd.co/docs/forms/setting-up-a-ghost-signup-form
+    direction: carrd-as-client
+    catalog_match: null
+    arazzo: null
+  - slug: hubspot
+    label: HubSpot
+    partner: HubSpot
+    category: crm
+    use_case: Signup form creates a HubSpot contact
+    docs: https://carrd.co/docs/forms/setting-up-a-hubspot-signup-form
+    direction: carrd-as-client
+    catalog_match: all/hubspot
+    arazzo: null
+  - slug: kit
+    label: Kit
+    partner: Kit (formerly ConvertKit)
+    category: email-marketing
+    use_case: Signup form subscribes a visitor to a Kit form
+    docs: https://carrd.co/docs/forms/setting-up-a-kit-signup-form
+    direction: carrd-as-client
+    catalog_match: all/kit
+    arazzo: null
+  - slug: klaviyo
+    label: Klaviyo
+    partner: Klaviyo
+    category: email-marketing
+    use_case: Signup form adds a visitor to a Klaviyo list
+    docs: https://carrd.co/docs/forms/setting-up-a-klaviyo-signup-form
+    direction: carrd-as-client
+    catalog_match: all/klaviyo
+    arazzo: null
+  - slug: loops
+    label: Loops
+    partner: Loops
+    category: email-marketing
+    use_case: Signup form adds a visitor to Loops contacts and lists
+    docs: https://carrd.co/docs/forms/setting-up-a-loops-signup-form
+    direction: carrd-as-client
+    catalog_match: all/loops
+    arazzo: null
+  - slug: mailchimp
+    label: Mailchimp
+    partner: Mailchimp
+    category: email-marketing
+    use_case: Signup form adds a visitor to a Mailchimp audience
+    docs: https://carrd.co/docs/forms/setting-up-a-mailchimp-signup-form
+    direction: carrd-as-client
+    catalog_match: all/mailchimp
+    arazzo: null
+  - slug: mailerlite
+    label: MailerLite
+    partner: MailerLite
+    category: email-marketing
+    use_case: Signup form adds a visitor to a MailerLite group
+    docs: https://carrd.co/docs/forms/setting-up-a-mailerlite-signup-form
+    direction: carrd-as-client
+    catalog_match: all/mailerlite
+    arazzo: null
+  - slug: mailjet
+    label: Mailjet
+    partner: Mailjet
+    category: email-marketing
+    use_case: Signup form adds a visitor as a Mailjet contact
+    docs: https://carrd.co/docs/forms/setting-up-a-mailjet-signup-form
+    direction: carrd-as-client
+    catalog_match: all/mailjet
+    arazzo: null
+  - slug: omnisend
+    label: Omnisend
+    partner: Omnisend
+    category: email-marketing
+    use_case: Signup form adds a visitor as an Omnisend contact
+    docs: https://carrd.co/docs/forms/setting-up-an-omnisend-signup-form
+    direction: carrd-as-client
+    catalog_match: all/omnisend
+    arazzo: null
+  - slug: resend
+    label: Resend
+    partner: Resend
+    category: email-api
+    use_case: Signup form adds a visitor as a Resend contact (added 2026-06-22)
+    docs: https://carrd.co/docs/forms/setting-up-a-resend-signup-form
+    direction: carrd-as-client
+    catalog_match: all/resend
+    arazzo: null
+  - slug: sender
+    label: Sender
+    partner: Sender
+    category: email-marketing
+    use_case: Signup form adds a visitor as a Sender subscriber
+    docs: https://carrd.co/docs/forms/setting-up-a-sender-signup-form
+    direction: carrd-as-client
+    catalog_match: all/sender
+    arazzo: null
+  - slug: sendfox
+    label: SendFox
+    partner: SendFox
+    category: email-marketing
+    use_case: Signup form adds a visitor to a SendFox list
+    docs: https://carrd.co/docs/forms/setting-up-a-sendfox-signup-form
+    direction: carrd-as-client
+    catalog_match: null
+    arazzo: null
+  - slug: sendgrid
+    label: SendGrid
+    partner: Twilio SendGrid
+    category: email-api
+    use_case: Signup form adds a visitor to a SendGrid list
+    docs: https://carrd.co/docs/forms/setting-up-a-sendgrid-signup-form
+    direction: carrd-as-client
+    catalog_match: all/sendgrid
+    arazzo: null
+  - slug: sendy
+    label: Sendy
+    partner: Sendy
+    category: email-marketing
+    use_case: Signup form adds a visitor to a Sendy list
+    docs: https://carrd.co/docs/forms/setting-up-a-sendy-signup-form
+    direction: carrd-as-client
+    catalog_match: null
+    arazzo: null
+  # --- Custom forms: Carrd delivers submissions to an automation platform or an arbitrary URL
+  - slug: zapier
+    label: Zapier
+    partner: Zapier
+    category: automation
+    use_case: Custom form sends submission data to a Zapier Zap
+    docs: https://carrd.co/docs/forms/setting-up-a-custom-zapier-form
+    direction: carrd-as-client
+    catalog_match: all/zapier
+    arazzo: null
+  - slug: make
+    label: Make
+    partner: Make
+    category: automation
+    use_case: Custom form sends submission data to a Make scenario
+    docs: https://carrd.co/docs/forms/setting-up-a-custom-make-form
+    direction: carrd-as-client
+    catalog_match: all/make
+    arazzo: null
+  - slug: n8n
+    label: n8n
+    partner: n8n
+    category: automation
+    use_case: Custom form sends submission data to an n8n workflow
+    docs: https://carrd.co/docs/forms/setting-up-a-custom-n8n-form
+    direction: carrd-as-client
+    catalog_match: all/n8n
+    arazzo: null
+  - slug: airtable
+    label: Airtable
+    partner: Airtable
+    category: database
+    use_case: Custom form adds a record to an Airtable table
+    docs: https://carrd.co/docs/forms/setting-up-a-custom-airtable-form
+    direction: carrd-as-client
+    catalog_match: all/airtable
+    arazzo: null
+  - slug: custom-url
+    label: Custom URL
+    partner: null
+    category: generic-http
+    use_case: >-
+      Custom form submits its contents to any URL the site owner supplies. Method AJAX / POST
+      / GET; format Default (form-encoded), JSON, or XML; up to five custom request headers;
+      per-field Submitted ID supports dotted namespacing (fields.firstname) in JSON/XML; UTM
+      parameters (utm_source, utm_medium, utm_campaign, utm_term, utm_content) can be
+      appended automatically. On AJAX, a 2xx response is treated as success and anything
+      else as failure. NOTE — this is a browser-side form submission from the published
+      Carrd site, NOT a server-originated webhook from Carrd, so it is not an event surface
+      and no Webhooks pointer is emitted for it.
+    docs: https://carrd.co/docs/forms/setting-up-a-custom-url-form
+    direction: carrd-as-client
+    catalog_match: null
+    arazzo: null
+  # --- Payments + embeddable third-party widgets
+  - slug: stripe
+    label: Stripe
+    partner: Stripe
+    category: payments
+    use_case: >-
+      Payment-enabled forms insert a Stripe Checkout screen before processing; site owner
+      supplies their own Stripe API keys and either a preconfigured Price ID or a custom
+      price. Stripe is also available as an embeddable Widget element.
+    docs: https://carrd.co/docs/forms/setting-up-payments
+    direction: carrd-as-client
+    catalog_match: all/stripe
+    arazzo: null
+  - slug: paypal
+    label: PayPal
+    partner: PayPal
+    category: payments
+    use_case: Embeddable PayPal widget element
+    docs: https://carrd.co/docs/building/adding-widgets
+    direction: embed
+    catalog_match: all/paypal
+    arazzo: null
+  - slug: gumroad
+    label: Gumroad
+    partner: Gumroad
+    category: commerce
+    use_case: Embeddable Gumroad widget element
+    docs: https://carrd.co/docs/building/adding-widgets
+    direction: embed
+    catalog_match: all/gumroad
+    arazzo: null
+  - slug: typeform
+    label: Typeform
+    partner: Typeform
+    category: forms
+    use_case: Embeddable Typeform widget element
+    docs: https://carrd.co/docs/building/adding-widgets
+    direction: embed
+    catalog_match: all/typeform
+    arazzo: null
+  - slug: facebook
+    label: Facebook
+    partner: Meta
+    category: social
+    use_case: Embeddable Facebook widget element
+    docs: https://carrd.co/docs/building/adding-widgets
+    direction: embed
+    catalog_match: all/facebook
+    arazzo: null
+coverage:
+  integration_count: 30
+  arazzo_count: 0
+  catalog_matched: 26

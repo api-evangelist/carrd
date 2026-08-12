@@ -1,0 +1,139 @@
+generated: '2026-08-12'
+method: searched
+source: https://carrd.co/pro
+docs: https://carrd.co/docs/pro/plans
+currency: USD
+billing_period: year
+plan_count: 17
+note: >-
+  Carrd publishes a fully public, per-tier price list for its consumer/creator product.
+  These are PRODUCT plans, not API plans — Carrd exposes no public API, so no tier carries
+  an API quota, rate limit, or key allowance. Tier separation is by site count and by
+  feature band (Lite / Standard / Plus). Prices are annual and read verbatim from
+  https://carrd.co/pro on 2026-08-12.
+plans:
+  - name: Free
+    price: 0
+    currency: USD
+    period: year
+    included: 3 sites
+    limits:
+      sites: 3
+      branding: '"Made with Carrd" footer branding required'
+    note: All core features; no Pro-exclusive features.
+  - name: Pro Lite
+    price: 9
+    currency: USD
+    period: year
+    included: 3 sites
+    limits: {sites: 3}
+    features: [Premium URLs, No Branding, High Quality Images, Large Images and Videos, No Element Limit, Premium Templates, Custom Templates, Video Uploads, Slideshows, Site Icons, Share Images, QR Codes, Site Transfers, Sharing]
+  - name: Pro Lite 10
+    price: 14
+    currency: USD
+    period: year
+    included: 10 sites
+    limits: {sites: 10}
+  - name: Pro Lite 25
+    price: 29
+    currency: USD
+    period: year
+    included: 25 sites
+    limits: {sites: 25}
+  - name: Pro Standard
+    price: 19
+    currency: USD
+    period: year
+    included: 10 sites
+    limits: {sites: 10}
+    features: [Custom Domain URLs, Forms, Widgets, Embeds, Analytics, Meta Tags, Local Fonts]
+  - name: Pro Standard 25
+    price: 39
+    currency: USD
+    period: year
+    included: 25 sites
+    limits: {sites: 25}
+  - name: Pro Standard 50
+    price: 69
+    currency: USD
+    period: year
+    included: 50 sites
+    limits: {sites: 50}
+  - name: Pro Standard 100
+    price: 119
+    currency: USD
+    period: year
+    included: 100 sites
+    limits: {sites: 100}
+  - name: Pro Standard 250
+    price: 249
+    currency: USD
+    period: year
+    included: 250 sites
+    limits: {sites: 250}
+  - name: Pro Standard 500
+    price: 399
+    currency: USD
+    period: year
+    included: 500 sites
+    limits: {sites: 500}
+  - name: Pro Standard 1000
+    price: 599
+    currency: USD
+    period: year
+    included: 1000 sites
+    limits: {sites: 1000}
+  - name: Pro Plus
+    price: 49
+    currency: USD
+    period: year
+    included: 25 sites
+    limits: {sites: 25}
+    features: [Advanced Forms, Advanced Settings, Download Sites, Redirects, Password Protection, Variables, Site Files, Update Frequency, Canonical URL]
+    note: >-
+      Pro Plus is the lowest tier that unlocks Advanced Forms — the only Carrd feature that
+      touches HTTP integration (custom forms that submit to a URL, Zapier, Make, n8n or
+      Airtable). Carrd is the CLIENT in every one of those flows.
+  - name: Pro Plus 50
+    price: 89
+    currency: USD
+    period: year
+    included: 50 sites
+    limits: {sites: 50}
+  - name: Pro Plus 100
+    price: 159
+    currency: USD
+    period: year
+    included: 100 sites
+    limits: {sites: 100}
+  - name: Pro Plus 250
+    price: 349
+    currency: USD
+    period: year
+    included: 250 sites
+    limits: {sites: 250}
+  - name: Pro Plus 500
+    price: 599
+    currency: USD
+    period: year
+    included: 500 sites
+    limits: {sites: 500}
+  - name: Pro Plus 1000
+    price: 999
+    currency: USD
+    period: year
+    included: 1000 sites
+    limits: {sites: 1000}
+trial:
+  available: true
+  length_days: 7
+  payment_required: false
+  note: 'Test drive Pro''s top features (custom domains, advanced forms) free for 7 days — no payment or credit card required.'
+payment_methods: [PayPal, credit card, debit card]
+x-evidence:
+  - url: https://carrd.co/pro
+    status: 200
+  - url: https://carrd.co/docs/pro/plans
+    status: 200
+  - url: https://carrd.co/pricing
+    status: 404

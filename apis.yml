@@ -1,17 +1,33 @@
 aid: carrd
 name: Carrd
-description: 'Carrd is a company surfaced via the API Evangelist harvest backlog (source: marketing-integration-graph)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Carrd is a hosted no-code website builder for simple, fully responsive one-page sites —
+  personal profiles, landing pages, portfolios, link pages and small campaign sites. Started
+  as a side project by AJ (@ajlkn) and now operated by Carrd Inc., it offers a free tier of
+  three sites and sixteen paid annual Pro tiers banded Lite, Standard and Plus, topping out
+  at 1,000 sites. Carrd publishes no public API, no developer portal, no SDKs and no
+  machine-readable specification; its only HTTP integration surface points outward, with
+  Pro-tier form elements delivering submissions into twenty email/CRM platforms, Zapier,
+  Make, n8n and Airtable, or to a URL the site owner supplies. Carrd is best understood as
+  an API consumer rather than an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/carrd/refs/heads/main/apis.yml
+image: https://carrd.co/assets/docs/images/brand/png/logo-color-light.png
 x-type: company
 x-source: harvest:marketing-integration-graph
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: enriched
 specificationVersion: '0.20'
 created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Website Builder
+- No Code
+- Landing Pages
+- Web Hosting
+- Site Builder
+- Forms
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,9 +35,65 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carrd-domain-security.yml
 - type: Website
-  url: https://carrd.com/
+  url: https://carrd.co/
+- type: Documentation
+  url: https://carrd.co/docs
+- type: GettingStarted
+  url: https://carrd.co/docs/building/basics
+- type: Support
+  url: https://carrd.co/contact
+- type: Pricing
+  url: https://carrd.co/pro
+- type: SignUp
+  url: https://carrd.co/signup
+- type: Login
+  url: https://carrd.co/login
+- type: TermsOfService
+  url: https://carrd.co/docs/general/terms
+- type: PrivacyPolicy
+  url: https://carrd.co/docs/general/privacy
+- type: ChangeLog
+  url: https://carrd.co/docs/general/changelog
+- type: ChangeLog
+  name: Carrd changelog (captured)
+  url: changelog/carrd-changelog.yml
+- type: Plans
+  url: plans/carrd-plans-pricing.yml
+- type: Integrations
+  name: Outbound integration graph (Carrd as API client)
+  url: integrations/_index.yml
+- type: LLMsTxt
+  url: llms/carrd-llms.txt
 x-vouched-by:
 - Ghost
 - MailerLite
 x-vouch-count: 2
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Carrd is a consumer/creator one-page site builder with no developer program at all:
+    carrd.co/api, /docs/api and /developers all return a hard 404, the documentation index
+    has six sections (General, Sites, Building, Forms, Account, Pro) and not one of them
+    mentions an API, and the only HTTP surface documented is outbound — Pro-tier forms
+    posting submissions into partner APIs or to a URL the site owner supplies.
+  evidence:
+    - url: https://carrd.co/developers
+      status: 404
+    - url: https://carrd.co/docs/api
+      status: 404
+    - url: https://carrd.co/openapi.json
+      status: 404
+    - url: https://carrd.co/.well-known/agent-card.json
+      status: 404
+    - url: https://carrd.co/docs
+      status: 200
+  checked: '2026-08-12'

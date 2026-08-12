@@ -1,0 +1,59 @@
+generated: '2026-08-12'
+method: searched
+source: https://carrd.co/docs/general/changelog
+scheme: dated
+note: >-
+  Carrd publishes a public, dated, human-readable changelog inside its documentation. There
+  is no version numbering scheme (the product is a hosted SaaS site builder with no released
+  API), no RSS/Atom feed, and no machine-readable changelog endpoint. Entries are grouped by
+  product area (Builder, Dashboard, Templates, Icons, Form Element). Recent window only —
+  the live page is the source of truth.
+current_version: null
+current_version_note: Carrd does not version its product publicly; entries are dated only.
+feed: null
+entries:
+  - date: '2026-08-07'
+    area: Builder
+    breaking: false
+    highlights:
+      - Added an Elements Panel (More Actions -> Elements) for navigating a site's elements
+  - date: '2026-07-25'
+    area: Templates
+    breaking: false
+    highlights: ['Added Template #321']
+  - date: '2026-07-24'
+    area: Templates
+    breaking: false
+    highlights: ['Added Template #320']
+  - date: '2026-07-23'
+    area: Templates
+    breaking: false
+    highlights: ['Added Template #319']
+  - date: '2026-07-22'
+    area: Icons
+    breaking: false
+    highlights: ['Added Album Whale, ATRAE, MobyGames, Mojang, and XDA icons']
+  - date: '2026-07-09'
+    area: Dashboard
+    breaking: false
+    highlights:
+      - Deleted sites now move to a Trash folder and can be restored; permanently deleted after 3 days (14 days on a Pro plan)
+  - date: '2026-07-02'
+    area: Templates
+    breaking: false
+    highlights: ['Added Template #318']
+  - date: '2026-07-01'
+    area: Icons
+    breaking: false
+    highlights: ['Added elasticStage, Eurosky, Fundies, Scratch.art, and W Social icons']
+  - date: '2026-06-22'
+    area: Form Element
+    breaking: false
+    highlights: [Signup forms now support direct integration with Resend]
+  - date: '2026-06-21'
+    area: Templates
+    breaking: false
+    highlights: ['Added Template #317']
+x-evidence:
+  - url: https://carrd.co/docs/general/changelog
+    status: 200
