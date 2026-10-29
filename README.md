@@ -64,5 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Carrd is a company surfaced via the API Evangelist harvest backlog (source: marketing-integration-graph) and added to the network as a stub for full-pipeline profiling.
-- https://carrd.com/
+Carrd is a hosted no-code website builder for simple, fully responsive one-page sites — personal profiles, landing pages, portfolios, link pages and small campaign sites. Started as a side project by AJ (@ajlkn) and now operated by Carrd Inc., it offers a free tier of three sites and sixteen paid annual Pro tiers banded Lite, Standard and Plus, topping out at 1,000 sites. Carrd publishes no public API, no developer portal, no SDKs and no machine-readable specification; its only HTTP integration surface points outward, with Pro-tier form elements delivering submissions into twenty email/CRM platforms, Zapier, Make, n8n and Airtable, or to a URL the site owner supplies. Carrd is best understood as an API consumer rather than an API provider.
+
+**Areas:** Company · Website Builder · No-Code · Landing Pages · Web Hosting · Site Builder · Forms · Software-as-a-Service
+
+## Carrd on APIs.io
+
+Everything profiled for Carrd is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/carrd/](https://apis.io/providers/carrd/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Carrd Domain Security](https://apis.io/security/carrd/carrd-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Carrd Plans Pricing](https://apis.io/plans/carrd/carrd-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://carrd.co/)
+- [Documentation](https://carrd.co/docs)
+- [Getting started](https://carrd.co/docs/building/basics)
+- [Pricing](https://carrd.co/pro)
+- [Sign up](https://carrd.co/signup)
+- [Support](https://carrd.co/contact)
+- [Changelog](https://carrd.co/docs/general/changelog)
+- [Terms of service](https://carrd.co/docs/general/terms)
+- [Privacy policy](https://carrd.co/docs/general/privacy)
+
+## API Evangelist rating
+
+**Kin Score 27.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 15.8 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 76.3 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/carrd/](https://apis.io/providers/carrd/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Carrd: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/carrd/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
